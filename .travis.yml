@@ -3,7 +3,7 @@ php:
 - 7.4
 before_script:
 - composer install
-script: composer tests
+script: composer test
 deploy:
   provider: heroku
   app: sesion6-mariogarcia
