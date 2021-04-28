@@ -2,6 +2,10 @@ language: php
 php:
 - 7.4
 before_script:
-  - composer install
+- composer install
 script: composer tests
-
+deploy:
+  provider: heroku
+  app: sesion6-mariogarcia
+  api_key:
+    secure: lG8/gIzFFTETbDiXuGLGcPaQlpgbOhfXHksNVlPltIf57nlUfZzO/JGK9+1vsPRoldxsC0qH55TJXj+XmlPy/1VSYDH+SSwVpHD7QVPFTHqh2IvUlO1tDKM+aIHWJEmeVZ26yIOtD7jicR6IIqgM7AVj0Dr/Th3DxHoPHR12tfXnjoWpnr0kcyQNspOXSQFEuvyhGwt1/fNv/zMDaqWAoQoS9OVwHko6mIgYSzGsw8t6i9VWjMGoljcQYu2p8Ew18aA6rvdO2EbTFoJstsCn1CCc5/UeBSEQU4/+kHmccn5iBDxRUtyVB9HKrLb+I30/TJHEQ8N9OaMwBAuej//YpnRERRqWKne9s5e4HJ5D3Q4GxJGN8/uuaiSieyEXwov3DR3FaLUJEnweF4lC0T67Vd0S3kChP+4KA6jpFwKio90GgY9V9JxsXydbhZ4Yzl1JCANQU4l2RHDHG/LfVoRs4eMoe46h6NpmXWE6ckqdeVxQwyh97Zdae4HUnD9Dap/E8St8kRMXFqjBKbxp+bNY2lioTZk2BgUUTkhjEqoK0UIbuNgn40HujJAbIc2yOisi1XWGTrA1pBib5BpB98pX1yplf7ljcxwQsfYMhiSIzi8HF76jPr46QWwI5hLwgmaxDvulbYHeAoGNv8JXai8TEHGn530EfTCRLTIN+y+9RDA=
