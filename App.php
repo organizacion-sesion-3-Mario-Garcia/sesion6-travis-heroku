@@ -83,9 +83,6 @@ require 'musicalbums.php';
 // Script para tareas relacionadas con videojuegos
 require 'videogames.php';
 
-// Script para tareas relacionadas con series
-require 'series.php';
-
 $this->app = $app;
     }
     public function get()
